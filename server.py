@@ -119,7 +119,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--port", "-p",
         type=int,
-        default=DEFAULT_PORT,
+        # Railway inyecta $PORT; en local se usa DEFAULT_PORT
+        default=int(os.environ.get("PORT", DEFAULT_PORT)),
         help=f"Puerto del servidor (default: {DEFAULT_PORT})"
     )
     args = parser.parse_args()

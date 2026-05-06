@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <!-- TODO: Personalizar título y descripción con el giro real de la empresa -->
+  <title>Maberal – Soluciones Profesionales con Confianza y Experiencia</title>
+  <meta name="description" content="Maberal ofrece soluciones profesionales con confianza, experiencia y cercanía. Conoce nuestros servicios y proyectos realizados." />
+  <meta name="keywords" content="Maberal, soluciones profesionales, servicios, proyectos" />
+  <meta name="author" content="Maberal" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Maberal – Soluciones Profesionales" />
+  <meta property="og:description" content="Confianza, compromiso y calidad en cada proyecto." />
+  <!-- TODO: Reemplazar con URL real del sitio -->
+  <meta property="og:url" content="https://www.maberal.com" />
+  <!-- TODO: Reemplazar con imagen OG real (1200x630px) -->
+  <meta property="og:image" content="https://www.maberal.com/assets/images/og-image.jpg" />
+
+  <!-- Favicon SVG inline -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%231B2A4A'/><text y='72' x='50' text-anchor='middle' font-size='58' font-family='Georgia,serif' fill='%23C89B3C' font-weight='bold'>M</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container navbar__inner">
+
+      <!-- Logo -->
+      <a href="#inicio" class="navbar__logo" aria-label="Maberal – Inicio">
+        <!-- TODO: Reemplazar con logo real (imagen o SVG) -->
+        <span class="navbar__logo-icon">M</span>
+        <span class="navbar__logo-text">Maberal</span>
+      </a>
+
+      <!-- Navegación principal -->
+      <nav class="navbar__nav" id="navMenu" role="navigation" aria-label="Menú principal">
+        <ul class="navbar__list">
+          <li><a href="#inicio"       class="navbar__link">Inicio</a></li>
+          <li><a href="#nosotros"     class="navbar__link">Sobre Nosotros</a></li>
+          <li><a href="#servicios"    class="navbar__link">Servicios</a></li>
+          <li><a href="#proyectos"    class="navbar__link">Proyectos</a></li>
+          <li><a href="#opiniones"    class="navbar__link">Opiniones</a></li>
+          <li><a href="#contacto"     class="navbar__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón menú hamburguesa (móvil) -->
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="inicio" aria-label="Sección principal">
+      <div class="hero__bg-decoration" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow reveal">Bienvenido a Maberal</p>
+        <h1 class="hero__title reveal">
+          Soluciones profesionales con<br />
+          <span class="hero__title--accent">confianza, experiencia</span><br />
+          y cercanía
+        </h1>
+        <!-- TODO: Personalizar subtítulo con descripción real del negocio -->
+        <p class="hero__subtitle reveal">
+          En Maberal transformamos tus necesidades en resultados concretos. Con años de experiencia y un equipo comprometido, somos el aliado estratégico que tu empresa necesita para crecer con seguridad.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#servicios" class="btn btn--primary">Ver nuestros servicios</a>
+          <a href="#contacto"  class="btn btn--secondary">Contactar ahora</a>
+        </div>
+      </div>
+      <!-- Decoración geométrica -->
+      <div class="hero__shapes" aria-hidden="true">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+        <div class="shape shape--3"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         STATS (contador animado)
+    ============================================================ -->
+    <section class="stats" aria-label="Estadísticas">
+      <div class="container stats__grid">
+        <!-- TODO: Reemplazar con números reales de la empresa -->
+        <div class="stat-item reveal">
+          <span class="stat-item__number" data-target="150">0</span><span class="stat-item__suffix">+</span>
+          <p class="stat-item__label">Proyectos completados</p>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-item__number" data-target="98">0</span><span class="stat-item__suffix">%</span>
+          <p class="stat-item__label">Clientes satisfechos</p>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-item__number" data-target="12">0</span><span class="stat-item__suffix">+</span>
+          <p class="stat-item__label">Años de experiencia</p>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-item__number" data-target="50">0</span><span class="stat-item__suffix">+</span>
+          <p class="stat-item__label">Clientes activos</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SOBRE NOSOTROS
+    ============================================================ -->
+    <section class="about" id="nosotros" aria-label="Sobre nosotros">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Quiénes somos</span>
+          <h2 class="section-title">Sobre Nosotros</h2>
+          <p class="section-subtitle">
+            <!-- TODO: Reemplazar con historia/descripción real de la empresa -->
+            Maberal nació con la misión de ofrecer soluciones de alta calidad adaptadas a las necesidades reales de cada cliente. Nos especializamos en brindar un servicio cercano, transparente y enfocado en resultados medibles.
+          </p>
+        </div>
+
+        <div class="about__grid">
+          <!-- Texto principal -->
+          <div class="about__text reveal">
+            <!-- TODO: Personalizar con historia real de la empresa -->
+            <p>
+              Con más de una década de experiencia, hemos construido una reputación sólida basada en la confianza de nuestros clientes y la excelencia de nuestro trabajo. Nuestro equipo de profesionales altamente capacitados trabaja con dedicación para superar las expectativas en cada proyecto.
+            </p>
+            <p>
+              Creemos que el éxito de nuestros clientes es nuestro éxito. Por eso, cada proyecto lo abordamos con la misma energía, compromiso y profesionalismo, sin importar su tamaño o complejidad.
+            </p>
+            <a href="#contacto" class="btn btn--primary" style="margin-top: 1.5rem; display: inline-block;">Trabaja con nosotros</a>
+          </div>
+
+          <!-- Tarjetas de valores -->
+          <div class="about__values">
+            <div class="value-card reveal">
+              <div class="value-card__icon" aria-hidden="true">
+                <!-- Icono Confianza -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <polyline points="9 12 11 14 15 10"/>
+                </svg>
+              </div>
+              <h3 class="value-card__title">Confianza</h3>
+              <p class="value-card__desc">Construimos relaciones duraderas basadas en la transparencia y el cumplimiento de cada compromiso adquirido.</p>
+            </div>
+
+            <div class="value-card reveal">
+              <div class="value-card__icon" aria-hidden="true">
+                <!-- Icono Compromiso -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="8" x2="12" y2="12"/>
+                  <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+              </div>
+              <h3 class="value-card__title">Compromiso</h3>
+              <p class="value-card__desc">Nos involucramos profundamente en cada proyecto, asegurando cumplir los plazos y estándares acordados.</p>
+            </div>
+
+            <div class="value-card reveal">
+              <div class="value-card__icon" aria-hidden="true">
+                <!-- Icono Calidad -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <h3 class="value-card__title">Calidad</h3>
+              <p class="value-card__desc">Cada detalle importa. Aplicamos estándares rigurosos para entregar resultados que superen tus expectativas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICIOS
+    ============================================================ -->
+    <section class="services" id="servicios" aria-label="Servicios">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Lo que hacemos</span>
+          <h2 class="section-title">Nuestros Servicios</h2>
+          <p class="section-subtitle">
+            Ofrecemos una amplia gama de soluciones diseñadas para impulsar el crecimiento y la eficiencia de tu empresa.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <!-- TODO: Reemplazar cada servicio con nombre, descripción e icono real -->
+
+          <!-- Servicio 1 -->
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Servicio 1</h3>
+            <p class="service-card__desc">Descripción breve del primer servicio que ofrece Maberal. Personaliza con información real del servicio.</p>
+            <a href="#contacto" class="service-card__link">Saber más →</a>
+          </article>
+
+          <!-- Servicio 2 -->
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Servicio 2</h3>
+            <p class="service-card__desc">Descripción breve del segundo servicio que ofrece Maberal. Personaliza con información real del servicio.</p>
+            <a href="#contacto" class="service-card__link">Saber más →</a>
+          </article>
+
+          <!-- Servicio 3 -->
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Servicio 3</h3>
+            <p class="service-card__desc">Descripción breve del tercer servicio que ofrece Maberal. Personaliza con información real del servicio.</p>
+            <a href="#contacto" class="service-card__link">Saber más →</a>
+          </article>
+
+          <!-- Servicio 4 -->
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.07 4.93l-1.41 1.41M4.93 19.07l1.41-1.41M19.07 19.07l-1.41-1.41M4.93 4.93l1.41 1.41M12 2v2M12 20v2M2 12h2M20 12h2"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Servicio 4</h3>
+            <p class="service-card__desc">Descripción breve del cuarto servicio que ofrece Maberal. Personaliza con información real del servicio.</p>
+            <a href="#contacto" class="service-card__link">Saber más →</a>
+          </article>
+
+          <!-- Servicio 5 -->
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Servicio 5</h3>
+            <p class="service-card__desc">Descripción breve del quinto servicio que ofrece Maberal. Personaliza con información real del servicio.</p>
+            <a href="#contacto" class="service-card__link">Saber más →</a>
+          </article>
+
+          <!-- Servicio 6 -->
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Servicio 6</h3>
+            <p class="service-card__desc">Descripción breve del sexto servicio que ofrece Maberal. Personaliza con información real del servicio.</p>
+            <a href="#contacto" class="service-card__link">Saber más →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROYECTOS
+    ============================================================ -->
+    <section class="projects" id="proyectos" aria-label="Proyectos realizados">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Nuestro trabajo</span>
+          <h2 class="section-title">Proyectos Realizados</h2>
+          <p class="section-subtitle">Una selección de los proyectos en los que hemos dejado nuestra huella.</p>
+        </div>
+
+        <!-- Filtros -->
+        <div class="projects__filters reveal" role="group" aria-label="Filtros de proyectos">
+          <button class="filter-btn filter-btn--active" data-filter="all">Todos</button>
+          <!-- TODO: Reemplazar Categoría A y B con categorías reales -->
+          <button class="filter-btn" data-filter="cat-a">Categoría A</button>
+          <button class="filter-btn" data-filter="cat-b">Categoría B</button>
+        </div>
+
+        <!-- Grid de proyectos -->
+        <div class="projects__grid" id="projectsGrid">
+
+          <!-- TODO: Reemplazar cada tarjeta con proyecto real (imagen, título, descripción, categoría) -->
+
+          <article class="project-card reveal" data-category="cat-a">
+            <div class="project-card__img project-card__img--1" role="img" aria-label="Proyecto 1"></div>
+            <div class="project-card__overlay">
+              <h3 class="project-card__title">Proyecto 1</h3>
+              <p class="project-card__desc">Descripción breve del proyecto. Categoría A.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="cat-b">
+            <div class="project-card__img project-card__img--2" role="img" aria-label="Proyecto 2"></div>
+            <div class="project-card__overlay">
+              <h3 class="project-card__title">Proyecto 2</h3>
+              <p class="project-card__desc">Descripción breve del proyecto. Categoría B.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="cat-a">
+            <div class="project-card__img project-card__img--3" role="img" aria-label="Proyecto 3"></div>
+            <div class="project-card__overlay">
+              <h3 class="project-card__title">Proyecto 3</h3>
+              <p class="project-card__desc">Descripción breve del proyecto. Categoría A.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="cat-b">
+            <div class="project-card__img project-card__img--4" role="img" aria-label="Proyecto 4"></div>
+            <div class="project-card__overlay">
+              <h3 class="project-card__title">Proyecto 4</h3>
+              <p class="project-card__desc">Descripción breve del proyecto. Categoría B.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="cat-a">
+            <div class="project-card__img project-card__img--5" role="img" aria-label="Proyecto 5"></div>
+            <div class="project-card__overlay">
+              <h3 class="project-card__title">Proyecto 5</h3>
+              <p class="project-card__desc">Descripción breve del proyecto. Categoría A.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="cat-b">
+            <div class="project-card__img project-card__img--6" role="img" aria-label="Proyecto 6"></div>
+            <div class="project-card__overlay">
+              <h3 class="project-card__title">Proyecto 6</h3>
+              <p class="project-card__desc">Descripción breve del proyecto. Categoría B.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         OPINIONES / TESTIMONIOS
+    ============================================================ -->
+    <section class="testimonials" id="opiniones" aria-label="Opiniones de clientes">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Lo que dicen</span>
+          <h2 class="section-title">Opiniones de Clientes</h2>
+          <p class="section-subtitle">La satisfacción de nuestros clientes es nuestra mejor carta de presentación.</p>
+        </div>
+
+        <div class="testimonials__slider" id="testimonialSlider" aria-live="polite">
+          <div class="testimonials__track" id="testimonialTrack">
+
+            <!-- TODO: Reemplazar con testimonios reales de clientes -->
+
+            <!-- Testimonio 1 -->
+            <article class="testimonial-card" aria-label="Testimonio de Ana García">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">
+                <!-- 5 estrellas SVG -->
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <blockquote class="testimonial-card__text">
+                "Maberal superó todas nuestras expectativas. Su profesionalismo y atención al detalle son incomparables. Definitivamente los recomendaría a cualquier empresa que busque resultados de calidad."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">AG</div>
+                <div>
+                  <strong class="testimonial-card__name">Ana García</strong>
+                  <span class="testimonial-card__role">Directora General · Empresa XYZ</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonio 2 -->
+            <article class="testimonial-card" aria-label="Testimonio de Carlos Martínez">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <blockquote class="testimonial-card__text">
+                "Trabajar con Maberal fue una experiencia extraordinaria. Su equipo demostró un nivel de compromiso y experticia que marcó una diferencia significativa en nuestro proyecto."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">CM</div>
+                <div>
+                  <strong class="testimonial-card__name">Carlos Martínez</strong>
+                  <span class="testimonial-card__role">CEO · Corporativo ABC</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonio 3 -->
+            <article class="testimonial-card" aria-label="Testimonio de Laura Rodríguez">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <blockquote class="testimonial-card__text">
+                "La cercanía y personalización del servicio de Maberal es incomparable. Siempre disponibles, siempre enfocados en resolver nuestras necesidades de manera efectiva y eficiente."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">LR</div>
+                <div>
+                  <strong class="testimonial-card__name">Laura Rodríguez</strong>
+                  <span class="testimonial-card__role">Gerente de Proyectos · Grupo LM</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonio 4 -->
+            <article class="testimonial-card" aria-label="Testimonio de Roberto Sánchez">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <blockquote class="testimonial-card__text">
+                "Desde el primer contacto hasta la entrega final, Maberal demostró ser el socio estratégico ideal. Su visión y capacidad de ejecución transformaron nuestro proyecto en un éxito rotundo."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">RS</div>
+                <div>
+                  <strong class="testimonial-card__name">Roberto Sánchez</strong>
+                  <span class="testimonial-card__role">Fundador · StartupRS</span>
+                </div>
+              </div>
+            </article>
+
+          </div><!-- /testimonials__track -->
+        </div><!-- /testimonials__slider -->
+
+        <!-- Controles del carrusel -->
+        <div class="testimonials__controls" aria-label="Controles del carrusel">
+          <button class="testimonials__btn testimonials__btn--prev" id="prevBtn" aria-label="Testimonio anterior">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </button>
+          <div class="testimonials__dots" id="testimonialDots" role="tablist" aria-label="Indicadores de testimonio">
+            <button class="dot dot--active" role="tab" aria-selected="true"  aria-label="Ir al testimonio 1" data-index="0"></button>
+            <button class="dot"            role="tab" aria-selected="false" aria-label="Ir al testimonio 2" data-index="1"></button>
+            <button class="dot"            role="tab" aria-selected="false" aria-label="Ir al testimonio 3" data-index="2"></button>
+            <button class="dot"            role="tab" aria-selected="false" aria-label="Ir al testimonio 4" data-index="3"></button>
+          </div>
+          <button class="testimonials__btn testimonials__btn--next" id="nextBtn" aria-label="Siguiente testimonio">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACTO
+    ============================================================ -->
+    <section class="contact" id="contacto" aria-label="Contacto">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Hablemos</span>
+          <h2 class="section-title">Contáctanos</h2>
+          <p class="section-subtitle">Estamos listos para escucharte. Cuéntanos sobre tu proyecto y te responderemos a la brevedad.</p>
+        </div>
+
+        <div class="contact__grid">
+
+          <!-- Formulario -->
+          <div class="contact__form-wrapper reveal">
+            <form class="contact__form" id="contactForm" novalidate aria-label="Formulario de contacto">
+
+              <div class="form-group">
+                <label for="name" class="form-label">Nombre completo <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre completo" required autocomplete="name" aria-required="true" />
+                <span class="form-error" id="nameError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Correo electrónico <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required autocomplete="email" aria-required="true" />
+                <span class="form-error" id="emailError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">Teléfono</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+34 000 000 000" autocomplete="tel" />
+                <span class="form-error" id="phoneError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Asunto <span aria-hidden="true">*</span></label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="¿En qué podemos ayudarte?" required aria-required="true" />
+                <span class="form-error" id="subjectError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group form-group--full">
+                <label for="message" class="form-label">Mensaje <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Cuéntanos sobre tu proyecto..." rows="5" required aria-required="true"></textarea>
+                <span class="form-error" id="messageError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary form-submit" id="submitBtn">
+                <span class="form-submit__text">Enviar mensaje</span>
+                <span class="form-submit__loading" aria-hidden="true" hidden>
+                  <svg class="spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" stroke-opacity="0.25"/>
+                    <path d="M12 2a10 10 0 0 1 10 10" stroke-opacity="1"/>
+                  </svg>
+                  Enviando...
+                </span>
+              </button>
+
+              <!-- Mensaje de éxito -->
+              <div class="form-success" id="formSuccess" role="alert" aria-live="polite" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                ¡Mensaje enviado con éxito! Te contactaremos pronto.
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Información de contacto -->
+          <aside class="contact__info reveal" aria-label="Información de contacto">
+
+            <div class="contact__info-card">
+              <h3 class="contact__info-title">Información de contacto</h3>
+
+              <ul class="contact__info-list">
+
+                <!-- Dirección -->
+                <!-- TODO: Reemplazar con dirección real -->
+                <li class="contact__info-item">
+                  <div class="contact__info-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                      <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>Dirección</strong>
+                    <p>Calle Gran Vía, 28, Planta 3ª<br />28013 Madrid, España</p>
+                  </div>
+                </li>
+
+                <!-- Teléfono -->
+                <!-- TODO: Reemplazar con teléfono real -->
+                <li class="contact__info-item">
+                  <div class="contact__info-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>Teléfono</strong>
+                    <!-- TODO: Reemplazar con el número real (+34 XXXXXXXXX) -->
+                    <p><a href="tel:+34000000000">+34 000 000 000</a></p>
+                  </div>
+                </li>
+
+                <!-- Email -->
+                <!-- TODO: Reemplazar con email real -->
+                <li class="contact__info-item">
+                  <div class="contact__info-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>Correo electrónico</strong>
+                    <p><a href="mailto:info@maberal.es">info@maberal.es</a></p>
+                  </div>
+                </li>
+
+                <!-- Horario -->
+                <li class="contact__info-item">
+                  <div class="contact__info-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>Horario de atención</strong>
+                    <p>Lun – Vie: 9:00 – 18:00 h<br />Sábados: 9:00 – 13:00 h</p>
+                  </div>
+                </li>
+
+              </ul>
+
+              <!-- Redes sociales en contacto -->
+              <div class="contact__social">
+                <p>Síguenos en redes sociales</p>
+                <div class="social-links">
+                  <!-- TODO: Reemplazar href con links reales de redes sociales -->
+                  <a href="#" class="social-link" aria-label="LinkedIn de Maberal" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                      <rect x="2" y="9" width="4" height="12"/>
+                      <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="social-link" aria-label="Instagram de Maberal" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="social-link" aria-label="Facebook de Maberal" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+
+      <!-- Columna 1: Logo + descripción -->
+      <div class="footer__brand">
+        <a href="#inicio" class="footer__logo" aria-label="Maberal – Inicio">
+          <span class="navbar__logo-icon">M</span>
+          <span class="navbar__logo-text">Maberal</span>
+        </a>
+        <!-- TODO: Personalizar descripción del footer -->
+        <p class="footer__desc">Soluciones profesionales con confianza, experiencia y cercanía. Tu socio estratégico para crecer con seguridad.</p>
+        <!-- Redes sociales -->
+        <div class="social-links footer__social">
+          <!-- TODO: Reemplazar href con links reales -->
+          <a href="#" class="social-link" aria-label="LinkedIn" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna 2: Navegación -->
+      <nav class="footer__nav" aria-label="Navegación del pie de página">
+        <h4 class="footer__nav-title">Navegación</h4>
+        <ul class="footer__nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Sobre Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#opiniones">Opiniones</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Columna 3: Servicios rápidos -->
+      <div class="footer__services">
+        <h4 class="footer__nav-title">Servicios</h4>
+        <!-- TODO: Reemplazar con servicios reales -->
+        <ul class="footer__nav-list">
+          <li><a href="#servicios">Servicio 1</a></li>
+          <li><a href="#servicios">Servicio 2</a></li>
+          <li><a href="#servicios">Servicio 3</a></li>
+          <li><a href="#servicios">Servicio 4</a></li>
+          <li><a href="#servicios">Servicio 5</a></li>
+          <li><a href="#servicios">Servicio 6</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Contacto rápido -->
+      <div class="footer__contact">
+        <h4 class="footer__nav-title">Contacto</h4>
+        <ul class="footer__nav-list footer__contact-list">
+          <!-- TODO: Actualizar con datos reales -->
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="16" height="16">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            Gran Vía, 28 – 28013 Madrid, España
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="16" height="16">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <a href="tel:+34000000000">+34 000 000 000</a>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="16" height="16">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <a href="mailto:info@maberal.es">info@maberal.es</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2025 Maberal. Todos los derechos reservados.</p>
+        <!-- TODO: Añadir links de Aviso de Privacidad y Términos si aplica -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BOTÓN FLOTANTE WHATSAPP
+  ============================================================ -->
+  <!-- TODO: Reemplazar con el número real de WhatsApp (formato: 34XXXXXXXXX) -->
+  <a
+    href="https://wa.me/34XXXXXXXXX?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
+    class="whatsapp-btn"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+    title="Chatea con nosotros en WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+    <span class="whatsapp-btn__tooltip">¿Necesitas ayuda?</span>
+  </a>
+
+  <!-- JavaScript al final del body para no bloquear el render -->
+  <script src="js/main.js"></script>
+</body>
+</html>

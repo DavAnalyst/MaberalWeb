@@ -22,18 +22,35 @@
    1. VARIABLES CSS
 ============================================================ */
 :root {
-  /* Paleta de colores */
-  --color-primary:     #1B2A4A;   /* Azul marino profundo */
-  --color-primary-light: #253660;
-  --color-accent:      #C89B3C;   /* Dorado/ámbar */
+  /* Paleta – azules oscuros por sección */
+  --color-primary:       #1B2A4A;
+  --color-primary-light: #243558;
+
+  /* Fondos de sección (cada uno diferente) */
+  --bg-hero:        #0B1526;   /* Más oscuro – Hero */
+  --bg-stats:       #0D1829;   /* Stats */
+  --bg-about:       #101E32;   /* Sobre Nosotros */
+  --bg-services:    #0E1B2E;   /* Servicios */
+  --bg-projects:    #111F35;   /* Proyectos */
+  --bg-testimonials:#0C1727;   /* Testimonios */
+  --bg-contact:     #101E32;   /* Contacto */
+  --bg-footer:      #080F1C;   /* Footer */
+
+  /* Fondos de tarjetas */
+  --color-card:         #172034;
+  --color-card-hover:   #1C2840;
+
+  --color-accent:      #C89B3C;
   --color-accent-light:#D9B560;
-  --color-white:       #FFFFFF;
-  --color-bg:          #F7F8FA;   /* Gris claro */
-  --color-text:        #2D3748;
-  --color-text-light:  #718096;
-  --color-border:      #E2E8F0;
-  --color-success:     #38A169;
-  --color-error:       #E53E3E;
+
+  /* Texto sobre fondos oscuros */
+  --color-text:        #C2D3E8;
+  --color-text-light:  #7A9ABF;
+  --color-heading:     #E8EEF8;
+
+  --color-border:      rgba(255,255,255,0.09);
+  --color-success:     #4ABA7F;
+  --color-error:       #F07070;
 
   /* Tipografía */
   --font-body:    'Inter', system-ui, -apple-system, sans-serif;
@@ -106,7 +123,7 @@ html {
 body {
   font-family: var(--font-body);
   color: var(--color-text);
-  background-color: var(--color-white);
+  background-color: var(--bg-hero);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -185,7 +202,7 @@ input, textarea, select {
   font-family: var(--font-heading);
   font-size: var(--text-3xl);
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-heading);
   line-height: 1.2;
   margin-bottom: var(--space-4);
 }
@@ -399,7 +416,7 @@ input, textarea, select {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, var(--color-primary) 0%, #0F1B2D 60%, #1B2A4A 100%);
+  background: linear-gradient(135deg, #060E1A 0%, #0B1526 55%, #1B2A4A 100%);
   overflow: hidden;
   padding-top: var(--navbar-height);
 }
@@ -500,8 +517,10 @@ input, textarea, select {
    6. STATS
 ============================================================ */
 .stats {
-  background-color: var(--color-primary);
+  background-color: var(--bg-stats);
   padding: var(--space-12) 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .stats__grid {
@@ -547,7 +566,7 @@ input, textarea, select {
 ============================================================ */
 .about {
   padding: var(--space-20) 0;
-  background-color: var(--color-white);
+  background-color: var(--bg-about);
 }
 
 .about__grid {
@@ -558,7 +577,7 @@ input, textarea, select {
 .about__text p {
   font-size: var(--text-lg);
   line-height: 1.8;
-  color: var(--color-text-light);
+  color: var(--color-text);
   margin-bottom: var(--space-4);
 }
 .about__text p:last-of-type { margin-bottom: 0; }
@@ -572,14 +591,15 @@ input, textarea, select {
   display: flex;
   gap: var(--space-5);
   padding: var(--space-6);
-  background: var(--color-bg);
+  background: var(--color-card);
   border-radius: var(--radius-lg);
   border-left: 4px solid var(--color-accent);
   transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 .value-card:hover {
   transform: translateX(4px);
-  box-shadow: var(--shadow-md);
+  background: var(--color-card-hover);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
 }
 
 .value-card__icon {
@@ -599,7 +619,7 @@ input, textarea, select {
   font-family: var(--font-heading);
   font-size: var(--text-xl);
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: var(--space-2);
 }
 
@@ -614,7 +634,7 @@ input, textarea, select {
 ============================================================ */
 .services {
   padding: var(--space-20) 0;
-  background-color: var(--color-bg);
+  background-color: var(--bg-services);
 }
 
 .services__grid {
@@ -624,7 +644,7 @@ input, textarea, select {
 }
 
 .service-card {
-  background: var(--color-white);
+  background: var(--color-card);
   border-radius: var(--radius-lg);
   padding: var(--space-8) var(--space-6);
   border: 1px solid var(--color-border);
@@ -646,8 +666,9 @@ input, textarea, select {
 }
 .service-card:hover {
   transform: translateY(-6px);
-  box-shadow: var(--shadow-xl);
-  border-color: transparent;
+  background: var(--color-card-hover);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  border-color: rgba(200,155,60,0.2);
 }
 .service-card:hover::after { transform: scaleX(1); }
 
@@ -657,9 +678,9 @@ input, textarea, select {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(27,42,74,.08);
+  background-color: rgba(200,155,60,.12);
   border-radius: var(--radius-md);
-  color: var(--color-primary);
+  color: var(--color-accent);
   margin-bottom: var(--space-5);
   transition: background-color var(--transition-base), color var(--transition-base);
 }
@@ -673,7 +694,7 @@ input, textarea, select {
   font-family: var(--font-heading);
   font-size: var(--text-xl);
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: var(--space-3);
 }
 
@@ -700,7 +721,7 @@ input, textarea, select {
 ============================================================ */
 .projects {
   padding: var(--space-20) 0;
-  background-color: var(--color-white);
+  background-color: var(--bg-projects);
 }
 
 /* Filtros */
@@ -719,7 +740,7 @@ input, textarea, select {
   font-weight: 500;
   color: var(--color-text-light);
   border: 1.5px solid var(--color-border);
-  background: var(--color-white);
+  background: var(--color-card);
   transition: all var(--transition-base);
 }
 .filter-btn:hover {
@@ -727,9 +748,10 @@ input, textarea, select {
   color: var(--color-accent);
 }
 .filter-btn--active {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  border-color: var(--color-primary);
+  background-color: var(--color-accent);
+  color: #0B1526;
+  border-color: var(--color-accent);
+  font-weight: 700;
 }
 
 /* Grid de proyectos */
@@ -804,7 +826,7 @@ input, textarea, select {
 ============================================================ */
 .testimonials {
   padding: var(--space-20) 0;
-  background-color: var(--color-bg);
+  background-color: var(--bg-testimonials);
 }
 
 .testimonials__slider {
@@ -820,10 +842,11 @@ input, textarea, select {
 
 .testimonial-card {
   flex: 0 0 100%;
-  background: var(--color-white);
+  background: var(--color-card);
   border-radius: var(--radius-xl);
   padding: var(--space-10) var(--space-8);
-  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
 }
 
 .testimonial-card__stars {
@@ -841,6 +864,7 @@ input, textarea, select {
   font-style: italic;
   margin-bottom: var(--space-6);
   position: relative;
+  padding-left: var(--space-4);
 }
 .testimonial-card__text::before {
   content: '"';
@@ -878,7 +902,7 @@ input, textarea, select {
 .testimonial-card__name {
   display: block;
   font-size: var(--text-base);
-  color: var(--color-primary);
+  color: var(--color-heading);
 }
 
 .testimonial-card__role {
@@ -901,21 +925,20 @@ input, textarea, select {
   width: 44px;
   height: 44px;
   border-radius: var(--radius-full);
-  background: var(--color-white);
-  color: var(--color-primary);
+  background: var(--color-card);
+  color: var(--color-text);
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1.5px solid var(--color-border);
-  box-shadow: var(--shadow-sm);
   transition: all var(--transition-base);
 }
 .testimonials__btn svg { width: 20px; height: 20px; }
 .testimonials__btn:hover {
-  background: var(--color-primary);
-  color: var(--color-white);
-  border-color: var(--color-primary);
-  box-shadow: var(--shadow-md);
+  background: var(--color-accent);
+  color: #0B1526;
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 16px rgba(200,155,60,0.3);
 }
 
 /* Dots indicadores */
@@ -939,7 +962,7 @@ input, textarea, select {
 ============================================================ */
 .contact {
   padding: var(--space-20) 0;
-  background-color: var(--color-white);
+  background-color: var(--bg-contact);
 }
 
 .contact__grid {
@@ -959,7 +982,7 @@ input, textarea, select {
 .form-label {
   font-size: var(--text-sm);
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 .form-label span { color: var(--color-accent); }
 
@@ -969,11 +992,13 @@ input, textarea, select {
   border: 1.5px solid var(--color-border);
   border-radius: var(--radius-md);
   font-size: var(--text-base);
-  color: var(--color-text);
-  background: var(--color-white);
+  color: var(--color-heading);
+  background: var(--color-card);
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
   width: 100%;
 }
+.form-input::placeholder,
+.form-textarea::placeholder { color: var(--color-text-light); }
 .form-input:focus,
 .form-textarea:focus {
   outline: none;
@@ -1020,7 +1045,8 @@ input, textarea, select {
 
 /* Info de contacto */
 .contact__info-card {
-  background: var(--color-bg);
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   padding: var(--space-8);
   height: 100%;
@@ -1029,7 +1055,7 @@ input, textarea, select {
 .contact__info-title {
   font-family: var(--font-heading);
   font-size: var(--text-2xl);
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: var(--space-6);
 }
 
@@ -1058,7 +1084,7 @@ input, textarea, select {
   display: block;
   font-size: var(--text-sm);
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: 4px;
 }
 .contact__info-item p,
@@ -1093,16 +1119,16 @@ input, textarea, select {
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-md);
-  background: var(--color-white);
+  background: var(--color-card);
   border: 1.5px solid var(--color-border);
   color: var(--color-text-light);
   transition: all var(--transition-base);
 }
 .social-link svg { width: 18px; height: 18px; }
 .social-link:hover {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: var(--color-white);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #0B1526;
   transform: translateY(-2px);
 }
 
@@ -1110,9 +1136,10 @@ input, textarea, select {
   12. FOOTER
 ============================================================ */
 .footer {
-  background-color: var(--color-primary);
+  background-color: var(--bg-footer);
   color: rgba(255,255,255,.75);
   padding: var(--space-16) 0 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
 }
 
 .footer__grid {
